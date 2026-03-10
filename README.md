@@ -125,6 +125,3 @@ python -m pytest
 - **Dashboard**: All your plans are saved locally to your session for quick access.
 - **Delete**: Clean up your workspace by removing completed goals.
 
----
-
-Built with ❤️ for students who want to study smarter, not harder.
