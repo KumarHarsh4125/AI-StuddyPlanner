@@ -265,32 +265,29 @@ header p {
   gap: 6px;
   background: #f1f5f9;
   color: var(--text-muted);
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
   border: 1px solid var(--border-color);
-}
-
-.switch-user-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: white;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
-.switch-user-btn:hover {
+.user-badge.clickable {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.user-badge.clickable:hover {
   background: var(--primary);
   color: white;
+  border-color: var(--primary);
 }
+
+.user-badge.clickable:hover svg {
+  color: white;
+}
+
 
 .logo {
   display: flex;

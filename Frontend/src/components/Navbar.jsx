@@ -29,13 +29,14 @@ const Navbar = ({ userId, onSwitchUser }) => {
                 </div>
 
                 <div className="nav-right">
-                    <div className="user-badge" title="Your unique ID. Share this to show your plans!">
+                    <button
+                        onClick={onSwitchUser}
+                        className="user-badge clickable"
+                        title="Click to switch User ID"
+                    >
                         <User size={14} />
                         <span>ID: {userId}</span>
-                    </div>
-                    <button onClick={onSwitchUser} className="switch-user-btn" title="Switch to another User ID">
-                        <RefreshCcw size={14} />
-                        <span>Switch</span>
+                        <RefreshCcw size={12} style={{ marginLeft: '4px', opacity: 0.6 }} />
                     </button>
                 </div>
             </div>
